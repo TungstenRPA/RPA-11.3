@@ -7,5 +7,9 @@ It then returns the file list to the host basic engine robot.
 
 Files
 * **Dir_Recurse_BER.robot** (the host basic engine robot)
-* **Dir_Recurse.robot** (the robot that uses the new **File System** step from Kofax RPA 11.3 to list the contents of a directory)
-* **FileSystem.type** contains all of the attributes that the **File System** step returns for each file or subdirectory.
+* **Dir_Recurse.robot** (the robot that uses the new **File System** step from Kofax RPA 11.3 to list the contents of a directory)  
+![image](https://user-images.githubusercontent.com/47416964/161029498-aa76e28f-7458-4bda-904c-f115967f156e.png)
+
+* **FileSystem.type** contains all of the attributes that the **File System** step returns for each file or subdirectory.  
+![image](https://user-images.githubusercontent.com/47416964/161029163-44351e2d-c394-4021-babc-69f6d0c086f8.png)
+
