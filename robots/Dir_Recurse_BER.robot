@@ -29,7 +29,7 @@
         </property>
         <property name="assignments" class="AttributeAssignments">
           <property name="value" class="AttributeAssignment">
-            <property name="attributeValue" class="String">c:\temp\aws</property>
+            <property name="attributeValue" class="String">c:/temp</property>
             <property name="currentlyAssigned" class="Boolean" id="1">true</property>
             <property name="lastKnownAttributeType" class="java.lang.Class">kapow.robot.plugin.common.domain.StringAttributeType</property>
           </property>

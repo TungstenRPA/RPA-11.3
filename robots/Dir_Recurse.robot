@@ -174,6 +174,33 @@
           }
         }
       }
+    },
+    {
+      "meta":{
+        "className":"VariableDef",
+        "version":1
+      },
+      "gizmo":{
+        "id": { "string": "exists" },
+        "typ": {
+          "meta":{
+            "className":"TypeUse",
+            "version":1
+          },
+          "gizmo":{
+            "id": { "string": "Boolean" }
+          }
+        },
+        "comment": {
+          "meta":{
+            "className":"Comment",
+            "version":0
+          },
+          "gizmo":{
+            "comment": { "string": "" }
+          }
+        }
+      }
     }],
     "block": {
       "meta":{
@@ -783,6 +810,659 @@
                         "text": { "string": "Dirs" }
                       }
                     }
+                  }
+                },
+                {
+                  "meta":{
+                    "className":"FilesystemActionStep",
+                    "version":0
+                  },
+                  "gizmo":{
+                    "name": {
+                      "meta":{
+                        "className":"StepName",
+                        "version":0
+                      },
+                      "gizmo":{
+                        "customName": { "string": "File System Action: Exists" }
+                      }
+                    },
+                    "comment": {
+                      "meta":{
+                        "className":"Comment",
+                        "version":0
+                      },
+                      "gizmo":{
+                        "comment": { "string": "check if Dir exists" }
+                      }
+                    },
+                    "finder": {
+                      "meta":{
+                        "className":"DeviceFinderWithName",
+                        "version":3
+                      },
+                      "gizmo":{
+                        "name": {
+                          "meta":{
+                            "className":"FinderName",
+                            "version":0
+                          },
+                          "gizmo":{
+                            "id": { "string": "" }
+                          }
+                        },
+                        "finder": {
+                          "meta":{
+                            "className":"DeviceReference",
+                            "version":0
+                          },
+                          "gizmo":{
+                            "reference": {
+                              "meta":{
+                                "className":"PreviousFinderReference",
+                                "version":0
+                              },
+                              "gizmo":{
+                                
+                              }
+                            }
+                          }
+                        },
+                        "comment": {
+                          "meta":{
+                            "className":"Comment",
+                            "version":0
+                          },
+                          "gizmo":{
+                            "comment": { "string": "" }
+                          }
+                        }
+                      }
+                    },
+                    "config": {
+                      "meta":{
+                        "className":"ActionStepConfig",
+                        "version":0
+                      },
+                      "gizmo":{
+                        "properties": {
+                          "meta":{
+                            "className":"RecordDasValue",
+                            "version":0
+                          },
+                          "gizmo":{
+                            "values": [{
+                              "meta":{
+                                "className":"DasFieldValue",
+                                "version":0
+                              },
+                              "gizmo":{
+                                "name": { "string": "Action" },
+                                "value": {
+                                  "meta":{
+                                    "className":"UnionDasValue",
+                                    "version":0
+                                  },
+                                  "gizmo":{
+                                    "id": { "string": "Exists" },
+                                    "value": {
+                                      "meta":{
+                                        "className":"MethodDasValue",
+                                        "version":0
+                                      },
+                                      "gizmo":{
+                                        "arguments": {
+                                          "meta":{
+                                            "className":"RecordDasValue",
+                                            "version":0
+                                          },
+                                          "gizmo":{
+                                            "values": [{
+                                              "meta":{
+                                                "className":"DasFieldValue",
+                                                "version":0
+                                              },
+                                              "gizmo":{
+                                                "name": { "string": "File Access" },
+                                                "value": {
+                                                  "meta":{
+                                                    "className":"EnumDasValue",
+                                                    "version":0
+                                                  },
+                                                  "gizmo":{
+                                                    "id": { "string": "Direct Access" }
+                                                  }
+                                                }
+                                              }
+                                            },
+                                            {
+                                              "meta":{
+                                                "className":"DasFieldValue",
+                                                "version":0
+                                              },
+                                              "gizmo":{
+                                                "name": { "string": "Item" },
+                                                "value": {
+                                                  "meta":{
+                                                    "className":"ExpressionDasValue",
+                                                    "version":0
+                                                  },
+                                                  "gizmo":{
+                                                    "expression": {
+                                                      "meta":{
+                                                        "className":"Expression",
+                                                        "version":1
+                                                      },
+                                                      "gizmo":{
+                                                        "text": { "string": "=Dir" },
+                                                        "comment": {
+                                                          "meta":{
+                                                            "className":"Comment",
+                                                            "version":0
+                                                          },
+                                                          "gizmo":{
+                                                            "comment": { "string": "" }
+                                                          }
+                                                        }
+                                                      }
+                                                    }
+                                                  }
+                                                }
+                                              }
+                                            }]
+                                          }
+                                        },
+                                        "returns": {
+                                          "meta":{
+                                            "className":"RecordDasValue",
+                                            "version":0
+                                          },
+                                          "gizmo":{
+                                            "values": [{
+                                              "meta":{
+                                                "className":"DasFieldValue",
+                                                "version":0
+                                              },
+                                              "gizmo":{
+                                                "name": { "string": "Result" },
+                                                "value": {
+                                                  "meta":{
+                                                    "className":"LeftHandSideDasValue",
+                                                    "version":0
+                                                  },
+                                                  "gizmo":{
+                                                    "leftHandSide": {
+                                                      "meta":{
+                                                        "className":"LeftHandSide",
+                                                        "version":1
+                                                      },
+                                                      "gizmo":{
+                                                        "text": { "string": "exists" }
+                                                      }
+                                                    }
+                                                  }
+                                                }
+                                              }
+                                            }]
+                                          }
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }]
+                          }
+                        },
+                        "metadata": {
+                          "meta":{
+                            "className":"RecordDasType",
+                            "version":0
+                          },
+                          "gizmo":{
+                            "fields": [{
+                              "meta":{
+                                "className":"DasField",
+                                "version":2
+                              },
+                              "gizmo":{
+                                "name": { "string": "Action" },
+                                "localizationKey": { "string": "Signature.fsops.device.kActionTitle" },
+                                "optional": { "boolean": "false" },
+                                "collapsible": { "boolean": "false" },
+                                "typeDefinition": {
+                                  "meta":{
+                                    "className":"UnionDasType",
+                                    "version":0
+                                  },
+                                  "gizmo":{
+                                    "defaultVariantId": { "string": "" },
+                                    "variants": [{
+                                      "meta":{
+                                        "className":"DasVariant",
+                                        "version":1
+                                      },
+                                      "gizmo":{
+                                        "name": { "string": "List Directory" },
+                                        "localizationKey": { "string": "Signature.fsops.device.kList" },
+                                        "id": { "string": "List Directory" },
+                                        "typeDefinition": {
+                                          "meta":{
+                                            "className":"UnspecifiedDasType",
+                                            "version":0
+                                          },
+                                          "gizmo":{
+                                            
+                                          }
+                                        }
+                                      }
+                                    },
+                                    {
+                                      "meta":{
+                                        "className":"DasVariant",
+                                        "version":1
+                                      },
+                                      "gizmo":{
+                                        "name": { "string": "Delete File" },
+                                        "localizationKey": { "string": "Signature.fsops.device.kDeleteFile" },
+                                        "id": { "string": "Delete File" },
+                                        "typeDefinition": {
+                                          "meta":{
+                                            "className":"UnspecifiedDasType",
+                                            "version":0
+                                          },
+                                          "gizmo":{
+                                            
+                                          }
+                                        }
+                                      }
+                                    },
+                                    {
+                                      "meta":{
+                                        "className":"DasVariant",
+                                        "version":1
+                                      },
+                                      "gizmo":{
+                                        "name": { "string": "Create Directory" },
+                                        "localizationKey": { "string": "Signature.fsops.device.kCreateDirectory" },
+                                        "id": { "string": "Create Directory" },
+                                        "typeDefinition": {
+                                          "meta":{
+                                            "className":"UnspecifiedDasType",
+                                            "version":0
+                                          },
+                                          "gizmo":{
+                                            
+                                          }
+                                        }
+                                      }
+                                    },
+                                    {
+                                      "meta":{
+                                        "className":"DasVariant",
+                                        "version":1
+                                      },
+                                      "gizmo":{
+                                        "name": { "string": "Delete Directory" },
+                                        "localizationKey": { "string": "Signature.fsops.device.kDeleteDirectory" },
+                                        "id": { "string": "Delete Directory" },
+                                        "typeDefinition": {
+                                          "meta":{
+                                            "className":"UnspecifiedDasType",
+                                            "version":0
+                                          },
+                                          "gizmo":{
+                                            
+                                          }
+                                        }
+                                      }
+                                    },
+                                    {
+                                      "meta":{
+                                        "className":"DasVariant",
+                                        "version":1
+                                      },
+                                      "gizmo":{
+                                        "name": { "string": "Exists" },
+                                        "localizationKey": { "string": "Signature.fsops.device.kExists" },
+                                        "id": { "string": "Exists" },
+                                        "typeDefinition": {
+                                          "meta":{
+                                            "className":"MethodDasType",
+                                            "version":0
+                                          },
+                                          "gizmo":{
+                                            "argumentsType": {
+                                              "meta":{
+                                                "className":"RecordDasType",
+                                                "version":0
+                                              },
+                                              "gizmo":{
+                                                "fields": [{
+                                                  "meta":{
+                                                    "className":"DasField",
+                                                    "version":2
+                                                  },
+                                                  "gizmo":{
+                                                    "name": { "string": "File Access" },
+                                                    "localizationKey": { "string": "Signature.fsops.device.kFileAccess" },
+                                                    "optional": { "boolean": "false" },
+                                                    "collapsible": { "boolean": "false" },
+                                                    "typeDefinition": {
+                                                      "meta":{
+                                                        "className":"EnumDasType",
+                                                        "version":0
+                                                      },
+                                                      "gizmo":{
+                                                        "defaultMemberId": { "string": "Direct Access" },
+                                                        "enumMembers": [{
+                                                          "meta":{
+                                                            "className":"DasEnumMember",
+                                                            "version":1
+                                                          },
+                                                          "gizmo":{
+                                                            "name": { "string": "Direct Access" },
+                                                            "localizationKey": { "string": "Signature.fsops.device.kDirectAccess" },
+                                                            "id": { "string": "Direct Access" }
+                                                          }
+                                                        },
+                                                        {
+                                                          "meta":{
+                                                            "className":"DasEnumMember",
+                                                            "version":1
+                                                          },
+                                                          "gizmo":{
+                                                            "name": { "string": "Via RFS" },
+                                                            "localizationKey": { "string": "Signature.fsops.device.kViaRFS" },
+                                                            "id": { "string": "Via RFS" }
+                                                          }
+                                                        }],
+                                                        "showAsRadioButton": { "boolean": "false" }
+                                                      }
+                                                    }
+                                                  }
+                                                },
+                                                {
+                                                  "meta":{
+                                                    "className":"DasField",
+                                                    "version":2
+                                                  },
+                                                  "gizmo":{
+                                                    "name": { "string": "Item" },
+                                                    "localizationKey": { "string": "Signature.fsops.device.kItem" },
+                                                    "optional": { "boolean": "false" },
+                                                    "collapsible": { "boolean": "false" },
+                                                    "typeDefinition": {
+                                                      "meta":{
+                                                        "className":"StringDasType",
+                                                        "version":0
+                                                      },
+                                                      "gizmo":{
+                                                        "defaultValue": { "string": "" }
+                                                      }
+                                                    }
+                                                  }
+                                                }]
+                                              }
+                                            },
+                                            "returnType": {
+                                              "meta":{
+                                                "className":"RecordDasType",
+                                                "version":0
+                                              },
+                                              "gizmo":{
+                                                "fields": [{
+                                                  "meta":{
+                                                    "className":"DasField",
+                                                    "version":2
+                                                  },
+                                                  "gizmo":{
+                                                    "name": { "string": "Result" },
+                                                    "localizationKey": { "string": "Signature.fsops.device.kResult" },
+                                                    "optional": { "boolean": "false" },
+                                                    "collapsible": { "boolean": "false" },
+                                                    "typeDefinition": {
+                                                      "meta":{
+                                                        "className":"BoolDasType",
+                                                        "version":0
+                                                      },
+                                                      "gizmo":{
+                                                        "defaultValue": { "boolean": "false" },
+                                                        "evaluateAtRuntime": { "boolean": "true" }
+                                                      }
+                                                    }
+                                                  }
+                                                }]
+                                              }
+                                            }
+                                          }
+                                        }
+                                      }
+                                    },
+                                    {
+                                      "meta":{
+                                        "className":"DasVariant",
+                                        "version":1
+                                      },
+                                      "gizmo":{
+                                        "name": { "string": "Copy File" },
+                                        "localizationKey": { "string": "Signature.fsops.device.kCopyFile" },
+                                        "id": { "string": "Copy File" },
+                                        "typeDefinition": {
+                                          "meta":{
+                                            "className":"UnspecifiedDasType",
+                                            "version":0
+                                          },
+                                          "gizmo":{
+                                            
+                                          }
+                                        }
+                                      }
+                                    },
+                                    {
+                                      "meta":{
+                                        "className":"DasVariant",
+                                        "version":1
+                                      },
+                                      "gizmo":{
+                                        "name": { "string": "Move" },
+                                        "localizationKey": { "string": "Signature.fsops.device.kMove" },
+                                        "id": { "string": "Move" },
+                                        "typeDefinition": {
+                                          "meta":{
+                                            "className":"UnspecifiedDasType",
+                                            "version":0
+                                          },
+                                          "gizmo":{
+                                            
+                                          }
+                                        }
+                                      }
+                                    },
+                                    {
+                                      "meta":{
+                                        "className":"DasVariant",
+                                        "version":1
+                                      },
+                                      "gizmo":{
+                                        "name": { "string": "Rename" },
+                                        "localizationKey": { "string": "Signature.fsops.device.kRename" },
+                                        "id": { "string": "Rename" },
+                                        "typeDefinition": {
+                                          "meta":{
+                                            "className":"UnspecifiedDasType",
+                                            "version":0
+                                          },
+                                          "gizmo":{
+                                            
+                                          }
+                                        }
+                                      }
+                                    },
+                                    {
+                                      "meta":{
+                                        "className":"DasVariant",
+                                        "version":1
+                                      },
+                                      "gizmo":{
+                                        "name": { "string": "Get Type" },
+                                        "localizationKey": { "string": "Signature.fsops.device.kGetType" },
+                                        "id": { "string": "Get Type" },
+                                        "typeDefinition": {
+                                          "meta":{
+                                            "className":"UnspecifiedDasType",
+                                            "version":0
+                                          },
+                                          "gizmo":{
+                                            
+                                          }
+                                        }
+                                      }
+                                    },
+                                    {
+                                      "meta":{
+                                        "className":"DasVariant",
+                                        "version":1
+                                      },
+                                      "gizmo":{
+                                        "name": { "string": "Close All Directories" },
+                                        "localizationKey": { "string": "Signature.fsops.device.kCloseAllDirectories" },
+                                        "id": { "string": "Close All Directories" },
+                                        "typeDefinition": {
+                                          "meta":{
+                                            "className":"UnspecifiedDasType",
+                                            "version":0
+                                          },
+                                          "gizmo":{
+                                            
+                                          }
+                                        }
+                                      }
+                                    },
+                                    {
+                                      "meta":{
+                                        "className":"DasVariant",
+                                        "version":1
+                                      },
+                                      "gizmo":{
+                                        "name": { "string": "Get Last Error" },
+                                        "localizationKey": { "string": "Signature.fsops.device.kGetLastError" },
+                                        "id": { "string": "Get Last Error" },
+                                        "typeDefinition": {
+                                          "meta":{
+                                            "className":"UnspecifiedDasType",
+                                            "version":0
+                                          },
+                                          "gizmo":{
+                                            
+                                          }
+                                        }
+                                      }
+                                    }],
+                                    "showAsCheckbox": { "boolean": "false" }
+                                  }
+                                }
+                              }
+                            }]
+                          }
+                        }
+                      }
+                    }
+                  }
+                },
+                {
+                  "meta":{
+                    "className":"ConditionalStep",
+                    "version":1
+                  },
+                  "gizmo":{
+                    "name": {
+                      "meta":{
+                        "className":"StepName",
+                        "version":0
+                      },
+                      "gizmo":{
+                        "customName": { "string": "Skip if Dir does not exist" }
+                      }
+                    },
+                    "comment": {
+                      "meta":{
+                        "className":"Comment",
+                        "version":0
+                      },
+                      "gizmo":{
+                        "comment": { "string": "The file system action will throw a DeviceIssue if a dir does not exist. We coudl catch that or check explicitly of the dir exists like we do here\n" }
+                      }
+                    },
+                    "branches": [{
+                      "meta":{
+                        "className":"ConditionAndBlock",
+                        "version":3
+                      },
+                      "gizmo":{
+                        "condition": {
+                          "meta":{
+                            "className":"Expression",
+                            "version":1
+                          },
+                          "gizmo":{
+                            "text": { "string": "=!exists" },
+                            "comment": {
+                              "meta":{
+                                "className":"Comment",
+                                "version":0
+                              },
+                              "gizmo":{
+                                "comment": { "string": "" }
+                              }
+                            }
+                          }
+                        },
+                        "block": {
+                          "meta":{
+                            "className":"Block",
+                            "version":2
+                          },
+                          "gizmo":{
+                            "steps": [{
+                              "meta":{
+                                "className":"ContinueStep",
+                                "version":1
+                              },
+                              "gizmo":{
+                                "name": {
+                                  "meta":{
+                                    "className":"StepName",
+                                    "version":0
+                                  },
+                                  "gizmo":{
+                                    "customName": { "string": "" }
+                                  }
+                                },
+                                "comment": {
+                                  "meta":{
+                                    "className":"Comment",
+                                    "version":0
+                                  },
+                                  "gizmo":{
+                                    "comment": { "string": "" }
+                                  }
+                                }
+                              }
+                            }]
+                          }
+                        },
+                        "comment": {
+                          "meta":{
+                            "className":"Comment",
+                            "version":0
+                          },
+                          "gizmo":{
+                            "comment": { "string": "" }
+                          }
+                        }
+                      }
+                    }]
                   }
                 },
                 {
@@ -2201,6 +2881,153 @@
                         }
                       }
                     }
+                  }
+                },
+                {
+                  "meta":{
+                    "className":"GuardedChoiceStep",
+                    "version":1
+                  },
+                  "gizmo":{
+                    "name": {
+                      "meta":{
+                        "className":"StepName",
+                        "version":0
+                      },
+                      "gizmo":{
+                        "customName": { "string": "" }
+                      }
+                    },
+                    "comment": {
+                      "meta":{
+                        "className":"Comment",
+                        "version":0
+                      },
+                      "gizmo":{
+                        "comment": { "string": "Listing a filesystem may take a long time, so this step a good idea on slower computer/filesystems" }
+                      }
+                    },
+                    "branches": [{
+                      "meta":{
+                        "className":"GuardAndBlock",
+                        "version":4
+                      },
+                      "gizmo":{
+                        "guard": {
+                          "meta":{
+                            "className":"TreeStopsChangingGuard",
+                            "version":0
+                          },
+                          "gizmo":{
+                            "finder": {
+                              "meta":{
+                                "className":"ApplicationFinderWithName",
+                                "version":6
+                              },
+                              "gizmo":{
+                                "name": {
+                                  "meta":{
+                                    "className":"FinderName",
+                                    "version":0
+                                  },
+                                  "gizmo":{
+                                    "id": { "string": "" }
+                                  }
+                                },
+                                "finder": {
+                                  "meta":{
+                                    "className":"ApplicationDescriptor",
+                                    "version":1
+                                  },
+                                  "gizmo":{
+                                    "deviceFinder": {
+                                      "meta":{
+                                        "className":"DeviceReference",
+                                        "version":0
+                                      },
+                                      "gizmo":{
+                                        "reference": {
+                                          "meta":{
+                                            "className":"NamedFinderReference",
+                                            "version":0
+                                          },
+                                          "gizmo":{
+                                            "id": { "string": "local" }
+                                          }
+                                        }
+                                      }
+                                    },
+                                    "applicationSelector": {
+                                      "meta":{
+                                        "className":"Expression",
+                                        "version":1
+                                      },
+                                      "gizmo":{
+                                        "text": { "string": "fs" },
+                                        "comment": {
+                                          "meta":{
+                                            "className":"Comment",
+                                            "version":0
+                                          },
+                                          "gizmo":{
+                                            "comment": { "string": "" }
+                                          }
+                                        }
+                                      }
+                                    }
+                                  }
+                                },
+                                "comment": {
+                                  "meta":{
+                                    "className":"Comment",
+                                    "version":0
+                                  },
+                                  "gizmo":{
+                                    "comment": { "string": "" }
+                                  }
+                                }
+                              }
+                            },
+                            "milliseconds": {
+                              "meta":{
+                                "className":"Expression",
+                                "version":1
+                              },
+                              "gizmo":{
+                                "text": { "string": "500" },
+                                "comment": {
+                                  "meta":{
+                                    "className":"Comment",
+                                    "version":0
+                                  },
+                                  "gizmo":{
+                                    "comment": { "string": "" }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        },
+                        "block": {
+                          "meta":{
+                            "className":"Block",
+                            "version":2
+                          },
+                          "gizmo":{
+                            "steps": []
+                          }
+                        },
+                        "comment": {
+                          "meta":{
+                            "className":"Comment",
+                            "version":0
+                          },
+                          "gizmo":{
+                            "comment": { "string": "" }
+                          }
+                        }
+                      }
+                    }]
                   }
                 },
                 {
