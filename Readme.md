@@ -1,4 +1,5 @@
 # Kofax RPA 11.3
+Join us [online](https://cvent.me/Y7gqWA) on Tuesday April 22, 2022.  
 ## New Robot Features
 * Date and Time reading and formationg
 * File Sytem access
