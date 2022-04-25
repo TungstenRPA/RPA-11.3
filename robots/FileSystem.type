@@ -20,18 +20,20 @@
     </object>
     <object class="kapow.robot.common.domain.Attribute" serializationversion="1">
       <property name="name" class="String">Size</property>
-      <property name="type" class="kapow.robot.plugin.common.domain.DoubleAttributeType"/>
-      <property name="recordFieldType" class="String">Number</property>
+      <property name="type" class="kapow.robot.plugin.common.domain.IntegerAttributeType"/>
+      <property name="recordFieldType" class="String">Integer</property>
     </object>
     <object class="kapow.robot.common.domain.Attribute" serializationversion="1">
       <property name="name" class="String">Created</property>
+      <property name="storageName" class="String">Date Created</property>
       <property name="type" class="kapow.robot.plugin.common.domain.DateAttributeType" id="3"/>
-      <property name="recordFieldType" class="String" id="4">DateTime</property>
+      <property name="recordFieldType" class="String">DateTime</property>
     </object>
     <object class="kapow.robot.common.domain.Attribute" serializationversion="1">
       <property name="name" class="String">Modified</property>
+      <property name="storageName" class="String">Date Modified</property>
       <property name="type" idref="3"/>
-      <property name="recordFieldType" idref="4"/>
+      <property name="recordFieldType" class="String">DateTime</property>
     </object>
     <object class="kapow.robot.common.domain.Attribute" serializationversion="1">
       <property name="name" class="String">Type</property>
