@@ -1,7 +1,9 @@
 # Kofax RPA 11.3
+Join our live [Community of Practice](https://cvent.me/M2wgvK) each month.  
+[What's New in 11.3 Video](https://kofax.app.bigtincan.com/pfiles/9Lvym0xkJ1qZ2D5MQEe0fjT2CkUKhJfvgerobl4p6aAjYGVRNK)  
+[What's New in 11.3 Presentation](https://github.com/KofaxRPA/RPA-11.3/raw/main/20220425%20RPA%2011.3%20What's%20New.pptx)  
+[11.3.0.1 Release Notes 29 April 2022](https://az32125.vo.msecnd.net/kef-products/Product$/RPA/KofaxRPA-11.3.0.1.0.299/RELEASE/ReadMe-KofaxRPA-11.3.0.1.htm?sv=2018-03-28&sr=c&sig=6UW7f2sxDdv3On0QlaaCc6ixztSFUFzULmlloTOJUyY%3D&se=2022-05-03T14%3A38%3A15Z&sp=r)  
 *[Kofax RPA 11.1](https://github.com/KofaxRPA/RPA-11.1#readme)* *[Kofax RPA 11.2](https://github.com/KofaxRPA/RPA-11.2#readme)*  
-Join us [online](https://cvent.me/M2wgvK) on Tuesday April 22, 2022.  
-[Video Presentation](https://kofax.app.bigtincan.com/pfiles/9Lvym0xkJ1qZ2D5MQEe0fjT2CkUKhJfvgerobl4p6aAjYGVRNK) [Powerpoint Presentation](https://github.com/KofaxRPA/RPA-11.3/raw/main/20220425%20RPA%2011.3%20What's%20New.pptx)
 ## New Features
 * Robots
   * Date and Time reading and formationg
